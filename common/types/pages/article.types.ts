@@ -1,5 +1,6 @@
 import { Blocks } from "../blocks/blocks.types";
 import { Editor } from "../editor.types";
+import { Tags } from "../tags.types";
 
 export type ArticlePage = {
     _type: "article";
@@ -9,7 +10,7 @@ export type ArticlePage = {
     blocks?: Blocks[];
     mainImage: any;
     editor: Editor;
-    tags: any;
+    tags: Tags;
     //TODO: CREATE MAImage TYPE;
     //TODO: CREATE TAGS TYPE;
 }
