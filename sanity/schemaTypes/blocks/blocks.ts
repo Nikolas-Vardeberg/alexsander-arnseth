@@ -1,4 +1,5 @@
 import { defineField } from "sanity";
+import { quote } from "./quote";
 
 
 export const blocks = defineField({
@@ -6,6 +7,6 @@ export const blocks = defineField({
     type: "array",
     title: "Blocks",
     of: [
-
+        quote
     ]
 })
