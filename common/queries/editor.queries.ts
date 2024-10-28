@@ -9,5 +9,5 @@ export const EDITOR_QUERY = groq`{
     image {
         "url": asset -> url,
         alt,
-    }
+    },
 }`;

@@ -4,7 +4,7 @@ import { defineField } from "sanity";
 
 export const editor = defineField({
     name: "editor",
-    title: "Agenter",
+    title: "Bakere",
     type: "document",
     icon: UserRound,
     fields: [
