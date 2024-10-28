@@ -2,6 +2,7 @@ import { defineType } from "sanity";
 import { seo } from "../other/seo";
 import { Newspaper } from "lucide-react";
 import { blocks } from "../blocks/blocks";
+import { tags } from "../other/tags";
 
 export const article = defineType({
     type: "document",
@@ -49,7 +50,12 @@ export const article = defineType({
             },
             group: "general",
         },
-        //TODO: TAGS
+        {
+            name: "tags",
+            type: "array",
+            of: [{ type: "reference", to: [{type: "tags"}]}],
+            group: "byline",
+        },  
         {
             name: "publishedAt",
             type: "datetime",
