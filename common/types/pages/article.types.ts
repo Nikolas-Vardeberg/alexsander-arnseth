@@ -10,7 +10,6 @@ export type ArticlePage = {
     blocks?: Blocks[];
     mainImage: any;
     editor: Editor;
-    tags: Tags; 
+    tags: Tags[]; 
     //TODO: CREATE MAImage TYPE;
-    //TODO: CREATE TAGS TYPE;
 }

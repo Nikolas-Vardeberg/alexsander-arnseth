@@ -1,4 +1,4 @@
-import { Home } from 'lucide-react'
+import { Home, SettingsIcon } from 'lucide-react'
 import type {StructureResolver} from 'sanity/structure'
 
 // https://www.sanity.io/docs/structure-builder-cheat-sheet
@@ -18,4 +18,29 @@ export const structure: StructureResolver = (S) =>
       S.documentTypeListItem("article").title("Article"),
       S.documentTypeListItem("editor").title("Bakere"),
       S.documentTypeListItem("transportPage").title("Transport Page"),
+      S.listItem()
+      .title("Generelle instillinger")
+      .icon(SettingsIcon)
+      .child(
+        S.list()
+          .title("Settings")
+          .items([
+            S.listItem()
+              .title("Footer")
+              .child(
+                S.editor()
+                  .schemaType("footer")
+                  .id("footer")
+                  .title("Footer")
+              ),
+            S.listItem()
+              .title("Header")
+              .child(
+                S.editor()
+                  .schemaType("header")
+                  .id("header")
+                  .title("Header")
+              ),
     ])
+)
+])
