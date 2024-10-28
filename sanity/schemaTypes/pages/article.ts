@@ -1,6 +1,7 @@
 import { defineType } from "sanity";
 import { seo } from "../other/seo";
 import { Newspaper } from "lucide-react";
+import { blocks } from "../blocks/blocks";
 
 export const article = defineType({
     type: "document",
@@ -62,7 +63,10 @@ export const article = defineType({
             ...seo,
             group: "seo",
         },
-        //TODO:BLOCKS
+        {
+            ...blocks,
+            group: "general",
+        }
         //TODO: EDITOR
     ],
     orderings: [
