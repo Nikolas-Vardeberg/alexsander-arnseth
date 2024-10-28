@@ -66,8 +66,13 @@ export const article = defineType({
         {
             ...blocks,
             group: "general",
+        },
+        {
+            name: "editor",
+            type: "reference",
+            to: [{ type: "editor" }],
+            group: "byline"
         }
-        //TODO: EDITOR
     ],
     orderings: [
         {
