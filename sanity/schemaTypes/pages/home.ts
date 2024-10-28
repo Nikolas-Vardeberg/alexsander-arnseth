@@ -8,27 +8,27 @@ export const home = defineType({
     icon: Home,
     fields: [
         {
-            name: "hero",
-            title: "Hero",
-            type: "object",
+            name: "title",
+            title: "title",
+            type: "string",
+        },
+        {
+            name: "description",
+            title: "Description",
+            type: "string",
+        },
+        {
+            name: "image",
+            title: "Image",
+            type: "image",
+            options: {
+                hotspot: true,
+            },
             fields: [
                 {
-                    name: "title",
-                    title: "title",
-                    type: "string",
-                },
-                {
-                    name: "description",
-                    title: "Description",
-                    type: "string",
-                },
-                {
-                    name: "image",
-                    title: "Image",
-                    type: "image",
-                    options: {
-                        hotspot: true,
-                    }
+                    name: "alt",
+                    title: "Alternative Text",
+                    type: "string"
                 }
             ]
         }
