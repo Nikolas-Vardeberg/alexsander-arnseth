@@ -1,5 +1,6 @@
 import Blocks from "@/common/components/blocks/Blocks";
 import { getTransportPageQuery } from "@/common/queries/pages/transport-page.queries";
+import TransportPageView from "@/common/views/transport-page/transport-page-view";
 import { sanityFetch } from "@/sanity/lib/client";
 import { notFound } from "next/navigation";
 
@@ -19,8 +20,7 @@ export default async function TransportPage({ params }: Props) {
 
     return(
         <>
-            <pre>{JSON.stringify(data, undefined, 2)}</pre>
-            <Blocks blocks={data.blocks ?? []} />
+            <TransportPageView data={data} />
         </>
     )
 }
