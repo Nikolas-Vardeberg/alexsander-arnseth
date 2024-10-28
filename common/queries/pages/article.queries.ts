@@ -1,6 +1,7 @@
 import { groq } from "next-sanity";
 import { BLOCKS_QUERY } from "../blocks/index.queries";
 import { EDITOR_QUERY } from "../editor.queries";
+import { seo } from "./seo.queries";
 
 
 export const ARTICLE_QUERY = groq`*[_type == "article" && slug.current == $slug][0]{
@@ -30,5 +31,5 @@ export const ARTICLE_QUERY = groq`*[_type == "article" && slug.current == $slug]
             },
             "tagCount": count((tags[]._ref)[@ in ^.tags[]._ref]),
         }| order(tagCount desc, _createdAt desc) [0...3],
-    seo,
+    ${seo},
 }`
