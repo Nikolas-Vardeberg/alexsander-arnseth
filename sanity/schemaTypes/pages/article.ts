@@ -40,6 +40,13 @@ export const article = defineType({
                 hotspot: true,
             },
             validation: (Rule) => Rule.required(),
+            fields: [
+                {
+                    name: "alt",
+                    title: "Alternative Text",
+                    type: "string",
+                }
+            ],
             group: "general",
         },
         {
