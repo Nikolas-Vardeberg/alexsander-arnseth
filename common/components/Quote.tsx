@@ -4,7 +4,7 @@ import { IQuote } from "../types/blocks/quote.types"
 
 const Quote = ({ _type, editor, quote }: IQuote) => {
     return(
-        <div>
+        <div className="">
             <p>{quote}</p>
         </div>
     )

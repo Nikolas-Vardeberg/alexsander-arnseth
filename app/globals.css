@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --color-primary: 212, 255, 197;
+  --color-primary-light: 243, 247, 239;
+  --color-primary-dark: 0, 47, 12;
+  --color-secondary-green: 84, 226, 64;
+  --color-secondary-pink: 251, 132, 253;
+}
+
+@layer base {
+  :root {
+    --color-primary: 212, 255, 197;
+    --color-primary-light: 243, 247, 239;
+    --color-primary-dark: 0, 47, 12;
+    --color-secondary-green: 84, 226, 64;
+    --color-secondary-pink: 251, 132, 253;
+  }
+}

@@ -23,6 +23,10 @@ export const article = defineType({
             name: "seo",
             title: "SEO",
         },
+        {
+            name: "bottomline",
+            title: "Bunnlinje"
+        }
     ],
     fields: [
         {
@@ -91,6 +95,12 @@ export const article = defineType({
             type: "reference",
             to: [{ type: "editor" }],
             group: "byline"
+        },
+        {
+            name: "test",
+            title: "Overskriv bunnlinje",
+            type: "boolean",
+            group: "bottomline"
         }
     ],
     orderings: [
