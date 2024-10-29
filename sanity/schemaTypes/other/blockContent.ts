@@ -71,13 +71,5 @@ export const blockContent = defineField({
         }
       ]
     }),
-    defineField({
-      type: 'code',
-      name: 'code',
-      title: 'Code',
-      options: {
-        language: 'javascript',
-      }
-    })
   ],
 })

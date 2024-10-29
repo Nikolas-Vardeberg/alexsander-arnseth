@@ -31,6 +31,7 @@ export const ARTICLE_QUERY = groq`*[_type == "article" && slug.current == $slug]
         title,
     },
     excerpt,
+    body[],
     "slug": slug.current,
     "blocks": blocks[]${BLOCKS_QUERY},
     "editor": editor->${EDITOR_QUERY},
