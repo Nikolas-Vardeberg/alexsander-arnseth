@@ -1,4 +1,4 @@
-import { Home, SettingsIcon } from 'lucide-react'
+import { CreditCard, Home, PanelBottom, PanelTop, SettingsIcon } from 'lucide-react'
 import type {StructureResolver} from 'sanity/structure'
 
 // https://www.sanity.io/docs/structure-builder-cheat-sheet
@@ -27,6 +27,7 @@ export const structure: StructureResolver = (S) =>
           .items([
             S.listItem()
               .title("Footer")
+              .icon(PanelTop)
               .child(
                 S.editor()
                   .schemaType("footer")
@@ -35,6 +36,7 @@ export const structure: StructureResolver = (S) =>
               ),
             S.listItem()
               .title("Header")
+              .icon(PanelBottom)
               .child(
                 S.editor()
                   .schemaType("header")
