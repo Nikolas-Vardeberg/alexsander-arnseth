@@ -1,4 +1,5 @@
 import { ARTICLE_QUERY } from "@/common/queries/pages/article.queries";
+import ArticlePageView from "@/common/views/article-page/article-page-view";
 import { sanityFetch } from "@/sanity/lib/client";
 import { notFound } from "next/navigation";
 
@@ -18,7 +19,7 @@ export default async function ArticlePage({ params }: Props) {
 
     return(
         <>
-            <pre>{JSON.stringify(data, undefined, 2)}</pre>
+            <ArticlePageView data={data} />
         </>
     )
 }
