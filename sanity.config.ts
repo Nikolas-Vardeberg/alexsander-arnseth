@@ -15,6 +15,7 @@ import {structure} from './sanity/structure'
 import { seoMetaFields } from 'sanity-plugin-seo'
 import { presentationTool } from 'sanity/presentation'
 import { theme } from './sanity.theme'
+import SanityThemeIcon from './common/components/sanity/SanityThemeIcon'
 
 export default defineConfig({
   basePath: '/studio',
@@ -23,6 +24,7 @@ export default defineConfig({
   // Add and edit the content schema in the './sanity/schemaTypes' folder
   schema,
   theme: theme,
+  icon: SanityThemeIcon,
   plugins: [
     structureTool({structure}),
     seoMetaFields(),
