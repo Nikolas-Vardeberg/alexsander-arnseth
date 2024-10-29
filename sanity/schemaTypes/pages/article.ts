@@ -50,6 +50,12 @@ export const article = defineType({
             group: "general",
         },
         {
+            name: "excerpt",
+            title: "Excerpt",
+            type: "string",
+            group: "byline"
+        },
+        {
             name: "slug",
             type: "slug",
             options: {

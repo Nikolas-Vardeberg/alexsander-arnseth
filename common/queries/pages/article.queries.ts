@@ -3,6 +3,18 @@ import { BLOCKS_QUERY } from "../blocks/index.queries";
 import { EDITOR_QUERY } from "../editor.queries";
 import { seo } from "./seo.queries";
 
+export const ARTICLE_QUERY_RAW = groq`{
+    title,
+    mainImage {
+        "url": asset -> url,
+        alt,
+    },
+    tags[]->{
+        "slug": slug.current,
+        title,
+    },
+    excerpt,
+}`
 
 export const ARTICLE_QUERY = groq`*[_type == "article" && slug.current == $slug][0]{
     _id,
@@ -16,6 +28,7 @@ export const ARTICLE_QUERY = groq`*[_type == "article" && slug.current == $slug]
         "slug": slug.current,
         title,
     },
+    excerpt,
     "slug": slug.current,
     "blocks": blocks[]${BLOCKS_QUERY},
     "editor": editor->${EDITOR_QUERY},
