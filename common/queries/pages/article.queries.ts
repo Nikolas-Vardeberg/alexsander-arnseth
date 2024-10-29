@@ -14,7 +14,7 @@ export const ARTICLE_QUERY_RAW = groq`{
         title,
     },
     excerpt,
-}`
+}`;
 
 export const ARTICLE_QUERY = groq`*[_type == "article" && slug.current == $slug][0]{
     _id,
