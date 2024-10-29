@@ -1,12 +1,15 @@
 import { Blocks } from "../blocks/blocks.types";
 import { SeoType } from "./seo.types";
 
-export type TransportPage = {
-    _type: "transportPage";
+
+export type HomePage = {
+    _type: "article";
     _id: string;
     title: string;
-    slug: string;
-    blocks?: Blocks[];
     excerpt: string;
+    blocks?: Blocks[];
+    mainImage: any;
     seo: SeoType,
+
+    //TODO: MAImage type
 }
