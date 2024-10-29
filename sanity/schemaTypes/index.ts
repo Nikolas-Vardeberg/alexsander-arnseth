@@ -6,7 +6,8 @@ import { TransportPage } from './pages/transport-page'
 import { home } from './pages/home'
 import { footer } from './other/footer'
 import { header } from './other/header'
+import { blockContent } from './other/blockContent'
 
 export const schema: { types: SchemaTypeDefinition[] } = {
-  types: [article, editor, tags, TransportPage, home, footer, header],
+  types: [article, editor, tags, TransportPage, home, footer, header, blockContent],
 }

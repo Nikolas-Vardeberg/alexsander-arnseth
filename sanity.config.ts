@@ -15,6 +15,7 @@ import {structure} from './sanity/structure'
 import { seoMetaFields } from 'sanity-plugin-seo'
 import { presentationTool } from 'sanity/presentation'
 import { theme } from './sanity.theme'
+import { codeInput } from '@sanity/code-input'
 
 export default defineConfig({
   basePath: '/studio',
@@ -34,6 +35,8 @@ export default defineConfig({
         },
       },
     }),
+
+    codeInput(),
     // Vision is for querying with GROQ from inside the Studio
     // https://www.sanity.io/docs/the-vision-plugin
     visionTool({defaultApiVersion: apiVersion}),

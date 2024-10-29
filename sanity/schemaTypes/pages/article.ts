@@ -86,6 +86,11 @@ export const article = defineType({
             ...seo,
             group: "seo",
         },
+        {   
+            name: "body",
+            type: "blockContent",
+            group: "general",
+        },
         {
             ...blocks,
             group: "general",

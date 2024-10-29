@@ -7,7 +7,19 @@ export const RenderBlock = ({ block, k: key }: { block: BlockType; k: number }) 
         case 'quote':
             return(
                 <Quote key={key} {...block} />
+            );
+        default: {
+            //biome-ignore lint/suspicious/noExplicitAny: <explanation>
+            const data = block as any;
+            console.warn(`Unknown block type "${data._type}"`);
+
+            return(
+                <div key={key}>
+                    <p>Unknown block type "${data._type ?? "None"}"</p>
+                    {process.env.NODE_ENV === "development" && <pre>{JSON.stringify(data, undefined, 2)}</pre>}
+                </div>
             )
+        }
     }
 }
 
