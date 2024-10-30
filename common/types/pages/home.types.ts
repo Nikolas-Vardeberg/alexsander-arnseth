@@ -1,4 +1,5 @@
 import { Blocks } from "../blocks/blocks.types";
+import { ArticleCard } from "./article.types";
 import { SeoType } from "./seo.types";
 
 
@@ -10,6 +11,6 @@ export type HomePage = {
     blocks?: Blocks[];
     mainImage: any;
     seo: SeoType,
-
+    latestArticle: ArticleCard[];
     //TODO: MAImage type
 }

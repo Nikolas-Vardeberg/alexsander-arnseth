@@ -12,7 +12,7 @@ export default async function Home() {
 
   return (
     <>
-      <HomePageView homepage={data} />
+      <HomePageView page={data} />
     </>
   );
 }
