@@ -15,5 +15,17 @@ export type ArticlePage = {
     tags: Tags[]; 
     body?: SanityBlockContent;
     seo: SeoType,
+    related: ArticleCard[];
+    //CREATE: RELATED TYPE
     //TODO: CREATE MAImage TYPE;
+}
+
+export type ArticleCard = {
+    _type: "article";
+    _id: string;
+    title: string;
+    slug: string;
+    mainImage: any;
+    tags: Tags[];
+    body?: SanityBlockContent;
 }
