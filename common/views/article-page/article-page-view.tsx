@@ -1,5 +1,6 @@
 import Blocks from "@/common/components/blocks/Blocks";
 import PortableText from "@/common/components/PortableText";
+import PostCard from "@/common/components/ui/card/post-card";
 import { ArticlePage } from "@/common/types/pages/article.types";
 import { urlFor } from "@/sanity/lib/image";
 import Image from "next/image";
@@ -21,18 +22,26 @@ const ArticlePageView = ({ data: page }: { data: ArticlePage }) => {
                         width={600}
                     />
 
-                    <PortableText value={page.body} />
+                    <PortableText value={page.body ?? []} />
                 </div>
                 <Blocks blocks={page.blocks ?? []} />
-                <div className="mx-auto w-full container px-4 sm:px-5 flex flex-col gap-8">
-                    <h3 className="text-black !font-semibold text-2xl">Les flere deilige blogger!!</h3>
 
-                    {page.related?.map((post, i) => (
-                        <div key={i}>
-                            {post.title}
+                {page.related && page.related.length > 0 && (
+                    <div className="mx-auto container px-4 sm:px-5 flex flex-col py-10">
+                        <div className="mx-auto w-full grid grid-cols-12">
+                            <div className="col-span-12 md:col-span-10">
+                                <h3 className="text-start text-black !font-semibold text-3xl">Les våre deilige blogger!!</h3>
+                            </div>
                         </div>
-                    ))}
-                </div>
+
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-between gap-8 mt-8">
+                            {page.related.map((post, k) => (
+                                <PostCard key={k} data={post ?? []} />
+                            ))}
+                        </div>
+                    </div>
+                )}
+
             </div>
         </>
     )
