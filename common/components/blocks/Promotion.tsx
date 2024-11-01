@@ -7,7 +7,7 @@ import {Link} from 'sanity-plugin-link-field/component'
 const Promotion = ({ _type, title, excerpt, image, link }: IPromotion) => {
     return(
         <div className="grid list-none gap-5 md:gap-y-12 my-10">
-            <div className="flex w-full flex-col overflow-hidden rounded-lg border border-secondary-green md:grid md:grid-cols-4">
+            <div className="flex w-full flex-col overflow-hidden rounded-lg border-2 border-secondary-green md:grid md:grid-cols-4">
                 <div className="w-full bg-variant-light dark:bg-variant-dark md:col-span-2">
                     <Image
                         src={image ? urlFor(image.url).url(): ""}

@@ -8,7 +8,6 @@ import Link from "next/link";
 
 
 const PostCard = ({ data: data }: { data: ArticleCard}) => {
-
     return(
         <Link href={`/artikler/${data.slug}`} className="cursor-pointer group flex flex-col h-ful group">
             <Image 

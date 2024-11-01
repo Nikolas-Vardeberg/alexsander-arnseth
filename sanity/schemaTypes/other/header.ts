@@ -7,9 +7,19 @@ export const header = defineType({
     type: "document",
     fields: [
         {
-            name: "name",
-            title: "name",
-            type: "string"
+            name: "links",
+            title: "Lenker",
+            type: "array",
+            of: [
+                {
+                    name: "link",
+                    title: "Lenke",
+                    type: "link",
+                    options: {
+                        enableText: true,
+                    },
+                }
+            ]
         }
     ]
 })

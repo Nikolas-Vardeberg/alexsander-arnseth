@@ -6,6 +6,7 @@ import { draftMode } from "next/headers";
 import { DisableDraftMode } from "@/common/components/sanity/DisableDraftMode";
 import { VisualEditing } from "next-sanity";
 import { SanityLive } from "@/sanity/lib/live";
+import Navigation from "@/common/components/Navigation";
 
 
 const spaceGrotesk = localFont({
@@ -30,6 +31,7 @@ export default async function RootLayout({
         <body
           className={`${spaceGrotesk.className} antialiased`}
         >
+          <Navigation />
           {children}
           <SanityLive />
           {(await draftMode()).isEnabled && (

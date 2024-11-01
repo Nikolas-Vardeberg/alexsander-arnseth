@@ -11,8 +11,8 @@ const ArticlePageView = ({ data: page }: { data: ArticlePage }) => {
 
     return(
         <>
-            <div className="py-8 bg-primary-light">
-                <div className="mx-auto w-full container px-4 sm:px-5 flex flex-col gap-6">
+            <div className="pt-8 bg-primary-light">
+                <div className="mx-auto w-full container px-4 sm:px-5 flex flex-col gap-6 my-10">
                     <h1 className="text-black !font-bold text-3xl">{page.title}</h1>
                     
                     <Image
@@ -21,8 +21,9 @@ const ArticlePageView = ({ data: page }: { data: ArticlePage }) => {
                         height={600}
                         width={600}
                     />
-
-                    <PortableText value={page.body ?? []} />
+                    <div className="prose lg:prose-xl">
+                        <PortableText value={page.body ?? []} />
+                    </div>
                 </div>
                 <Blocks blocks={page.blocks ?? []} />
 

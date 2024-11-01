@@ -7,7 +7,7 @@ import { ChefHat } from "lucide-react"
 
 const Quote = ({ _type, editor, quote }: IQuote) => {
     return(
-        <div className="border-y border-secondary-green bg-primary py-6 grid grid-cols-12 ">
+        <div className="border-y-2 border-secondary-green bg-primary py-6 grid grid-cols-12 ">
             <div className="mx-auto w-full container px-4 sm:px-5 col-span-12 md:col-span-10 md:col-start-2">
                 <figure className="col-span-10 sm:col-span-8 sm:col-start-2 flex flex-col sm:flex-row items-center justify-center gap-8 w-full">
                     <div className="flex items-center justify-end">
