@@ -3,9 +3,9 @@
 import { urlFor } from "@/sanity/lib/image";
 import Image from "next/image";
 
-const PageHeader = ({title, excerpt, mainImage}: { title: string; excerpt: string; mainImage: any; }) => {
+const PageHeader = ({title, excerpt, }: { title: string; excerpt: string;}) => {
     return(
-        <div className="bg-primary border-b-2 py-16 mb-10">
+        <div className="bg-primary border-b-2 py-16 mb-10 border-secondary-green">
             <div className="mx-auto w-full container px-4 sm:px-5 grid grid-cols-12 ">
                 <div className="col-span-12 sm:col-span-10 md:col-span-9 md:col-start-1 w-full lg:w-3/6">
                     <h1 className="text-black font-semibold text-4xl sm:text-6xl mb-5">{title}</h1>

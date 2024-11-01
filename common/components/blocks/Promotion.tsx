@@ -26,7 +26,7 @@ const Promotion = ({ _type, title, excerpt, image, link }: IPromotion) => {
                             {excerpt}
                         </p>
 
-                        <Link link={link} as={NextLink} className="min-w-fit uppercase bg-primary-dark text-white px-2 py-1 rounded-full max-w-fit border-none hover:bg-primary-light hover:text-black duration-300 transition-all">
+                        <Link link={link} as={NextLink}  className="min-w-fit hover:shadow-lg uppercase bg-primary-dark text-white px-2 py-1 rounded-full max-w-fit border-none hover:bg-secondary-pink hover:text-black duration-300 transition-all">
                             {link.text}
                         </Link> 
                     </div>

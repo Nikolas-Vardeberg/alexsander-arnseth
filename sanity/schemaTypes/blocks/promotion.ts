@@ -24,12 +24,6 @@ export const promotion = defineType({
             ],
         },
         {
-            name: "imageOnLeft",
-            title: "Bilde på Venstre",
-            type: "boolean",
-            initialValue: true,
-        },
-        {
             name: "title",
             title: "Title",
             type: "string",
