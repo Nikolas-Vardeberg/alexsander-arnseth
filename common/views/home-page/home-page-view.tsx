@@ -22,9 +22,9 @@ const HomePageView = ({ page }: { page: HomePage}) => {
                         <Image 
                             src={page.mainImage ? urlFor(page.mainImage.url).url(): ""}
                             alt={page.mainImage.alt}
-                            height={800}
-                            width={800}
-                            className="aspect-video h-full w-full object-cover"
+                            height={858}
+                            width={1200}
+                            className="h-full w-full object-cover"
                         />
                     </div>
                 </div>

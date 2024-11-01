@@ -10,7 +10,7 @@ export const RenderBlock = ({ block, k: key }: { block: BlockType; k: number }) 
 
         case 'promotion':
             return(
-                <div className='mx-auto w-full max-w-[1200px] px-4 sm:px-5'>
+                <div className='mx-auto w-full max-w-[1280px] px-4 sm:px-5'>
                     <Promotion key={key} {...block} />
                 </div>
             );

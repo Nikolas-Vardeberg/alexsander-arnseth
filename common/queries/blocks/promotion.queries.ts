@@ -9,5 +9,8 @@ export const PROMOTION_QUERY = groq`{
         "url": asset -> url,
         alt,
     },
-    link
+    link {
+    ...,
+    internalLink->{_type,slug,title}
+  },
 }`;

@@ -10,7 +10,7 @@ import Link from "next/link";
 const PostCard = ({ data: data }: { data: ArticleCard}) => {
 
     return(
-        <Link href={`/artikler/${data.slug}`} className="cursor-pointer group flex flex-col h-full">
+        <Link href={`/artikler/${data.slug}`} className="cursor-pointer group flex flex-col h-ful group">
             <Image 
                 src={data.mainImage ? urlFor(data.mainImage.url).url(): ""}
                 alt={data.mainImage.alt}
@@ -29,7 +29,7 @@ const PostCard = ({ data: data }: { data: ArticleCard}) => {
                     ))}
                 </ul>
                 <h4 className="mb-4 text-black font-bold text-2xl">{data.title}</h4>
-                <p>DESCRIPTION</p>
+                <p className="">DESCRIPTION</p>
             </div>
         </Link>
     )
