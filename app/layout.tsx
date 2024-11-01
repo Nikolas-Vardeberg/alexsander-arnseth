@@ -6,7 +6,7 @@ import { draftMode } from "next/headers";
 import { DisableDraftMode } from "@/common/components/sanity/DisableDraftMode";
 import { VisualEditing } from "next-sanity";
 import { SanityLive } from "@/sanity/lib/live";
-import Navigation from "@/common/components/Navigation";
+import Navigation from "@/common/components/global/Navigation";
 
 
 const spaceGrotesk = localFont({
