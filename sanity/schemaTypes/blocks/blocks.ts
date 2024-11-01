@@ -8,6 +8,7 @@ export const blocks = defineField({
     type: "array",
     title: "Blocks",
     of: [
-        quote
+        quote,
+        promotion,
     ]
 })
