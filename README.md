@@ -4,4 +4,7 @@ Dette prosjektet er en skreddersydd nettside for Alexsander Arnseth, som driver 
 
 ## Mockup
 
-![Mockup (2)](https://github.com/user-attachments/assets/fadab58a-0286-4d6d-99d3-9f27bbaae9fc)
+![Mockup (17)](https://github.com/user-attachments/assets/37cc694f-83a7-417a-b23e-8ec0ee944ffe)
+## A4 format
+
+![Desktop - 11 (4)](https://github.com/user-attachments/assets/7e95b16a-cebe-43a3-941c-5678c5a9b4c5)
