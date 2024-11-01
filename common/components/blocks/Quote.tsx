@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { IQuote } from "../types/blocks/quote.types"
+import { IQuote } from "../../types/blocks/quote.types"
 import { urlFor } from "@/sanity/lib/image"
 import { ChefHat } from "lucide-react"
 
