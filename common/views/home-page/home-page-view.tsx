@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const HomePageView = ({ page }: { page: HomePage}) => {
     return(
-        <>
+        <div className="bg-primary-light">
             <div className="border-b-2 border-secondary-green border-3 bg-primary py-10">
                 <div className="mx-auto w-full container grid grid-cols-12 px-4 sm:px-5 py-10 pt-20">
                     <div className="col-span-12 md:col-span-10 md:col-start-2">
@@ -65,7 +65,7 @@ const HomePageView = ({ page }: { page: HomePage}) => {
                     </div>
                 </div>
             )}
-        </>
+            </div>
     )
 }
 

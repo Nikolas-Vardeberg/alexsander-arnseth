@@ -14,6 +14,7 @@ export const ARTICLE_QUERY_RAW = groq`{
         title,
     },
     excerpt,
+    "slug": slug.current,
 }`;
 
 export const ARTICLES_QUERY = groq`*[_type == "article" && publishedAt < now()] | order(publishedAt desc) ${ARTICLE_QUERY_RAW}`; 
