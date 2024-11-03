@@ -10,15 +10,15 @@ export default async function Navigation() {
                 <div className="mx-auto container w-full grid grid-cols-12 px-4 sm:px-5 items-center ">
                     <div className="col-span-12 md:col-span-10 md:col-start-2 ">
                         <div className="flex w-full items-center justify-between">
-                            <p className="flex items-center justify-start text-sm  text-secondary-green uppercase md:text-lg">
+                            <p className="flex items-center justify-start text-sm  text-secondary-green uppercase md:text-lg hover:underline">
                                 Hjem
                             </p>
 
 
                             <ul className="flex w-full items-center justify-end gap-x-2 sm:gap-x-5 text-secondary-green" aria-label="snarveier">
-                                <li className="group py-2 md:py-4 text-sm md:text-lg uppercase">BESTILL KAKE</li>
-                                <li className="group py-2 md:py-4 text-sm md:text-lg uppercase">BESTILL KAKE</li>
-                                <li className="group py-2 md:py-4 text-sm md:text-lg uppercase">BESTILL KAKE</li>
+                                <li className="group py-2 md:py-4 text-sm md:text-lg uppercase hover:underline">BESTILL KAKE</li>
+                                <li className="group py-2 md:py-4 text-sm md:text-lg uppercase hover:underline ">BESTILL KAKE</li>
+                                <li className="group py-2 md:py-4 text-sm md:text-lg uppercase hover:underline">BESTILL KAKE</li>
                             </ul>
                         </div>
                     </div>
