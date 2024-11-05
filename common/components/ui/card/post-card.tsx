@@ -33,7 +33,7 @@ const PostCard = ({ data: data }: { data: ArticleCard}) => {
                     ))}
                 </ul>
                 <h4 className="mb-4 text-black font-bold text-2xl group-hover:underline">{data.title}</h4>
-                <p className="">DESCSRITPION</p>
+                <p className="text-black font-normal">{data.excerpt}</p>
             </div>
         </Link>
     )

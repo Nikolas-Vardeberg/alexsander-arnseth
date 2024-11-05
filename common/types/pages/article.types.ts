@@ -26,6 +26,7 @@ export type ArticleCard = {
     title: string;
     slug: string;
     mainImage: any;
+    excerpt: string;
     tags: Tags[];
     body?: SanityBlockContent;
 }
