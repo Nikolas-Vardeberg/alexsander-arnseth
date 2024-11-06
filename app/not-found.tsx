@@ -1,5 +1,4 @@
 import { Ghost } from 'lucide-react'
-import Link from 'next/link'
  
 export default function NotFound() {
   return (
@@ -8,7 +7,7 @@ export default function NotFound() {
             <h3 className='uppercase text-secondary-green text-3xl'>
                 Ganske tomt her, ja.
             </h3>
-          <p className='text-white text-xl text-center'>"Oops! Siden du leter etter, finnes dessverre ikke. Kanskje du har skrevet inn feil adresse, eller siden har blitt flyttet.</p>
+          <p className='text-white text-xl text-center'>Oops! Siden du leter etter, finnes dessverre ikke. Kanskje du har skrevet inn feil adresse, eller siden har blitt flyttet.</p>
     </div>
   )
-}
+}-

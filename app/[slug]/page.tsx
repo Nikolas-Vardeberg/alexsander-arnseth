@@ -1,4 +1,3 @@
-import Blocks from "@/common/components/blocks/Blocks";
 import { getTransportPageQuery } from "@/common/queries/pages/transport-page.queries";
 import TransportPageView from "@/common/views/transport-page/transport-page-view";
 import { sanityFetch } from "@/sanity/lib/client";
