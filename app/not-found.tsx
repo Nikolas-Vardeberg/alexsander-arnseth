@@ -10,4 +10,4 @@ export default function NotFound() {
           <p className='text-white text-xl text-center'>Oops! Siden du leter etter, finnes dessverre ikke. Kanskje du har skrevet inn feil adresse, eller siden har blitt flyttet.</p>
     </div>
   )
-}-
+}
