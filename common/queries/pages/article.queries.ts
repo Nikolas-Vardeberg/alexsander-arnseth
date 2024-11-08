@@ -46,6 +46,10 @@ export const ARTICLE_QUERY = groq`*[_type == "article" && slug.current == $slug]
                 title,
                 "slug": slug.current,
             },
+            mainImage {
+                "url": asset -> url,
+                alt,
+            },
             "tagCount": count((tags[]._ref)[@ in ^.tags[]._ref]),
         }| order(tagCount desc, _createdAt desc) [0...3],
     ${seo},
