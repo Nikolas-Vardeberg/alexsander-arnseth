@@ -7,8 +7,6 @@ import Image from "next/image";
 
 
 const ArticlePageView = ({ data: page }: { data: ArticlePage }) => {
-    console.log(page.mainImage.url)
-
     return(
         <>
             <div className="pt-8 bg-primary-light">

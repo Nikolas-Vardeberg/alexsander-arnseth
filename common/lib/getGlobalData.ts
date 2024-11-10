@@ -1,4 +1,6 @@
+import { sanityFetch } from "@/sanity/lib/client"
 import { GlobalData } from "../types/global-data.types"
+import { NAVIGATION_QUERY } from "../queries/navigation.queries"
 
 export const getGlobalData = async (): Promise<GlobalData> => {
     /*
@@ -6,7 +8,11 @@ export const getGlobalData = async (): Promise<GlobalData> => {
     const navbar = await client.fetch(`*[_type == "navbar"][0]`);
     */
 
+    const navbar = await sanityFetch({
+        query: NAVIGATION_QUERY,
+    });
+
     return {
-        example: "example",
+        navbar: navbar,
     }
 }

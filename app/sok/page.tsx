@@ -1,7 +1,6 @@
 import SearchView from "@/common/views/search/search-view";
-import { useState } from "react";
 
-export default function Page() {
+export default async function Page() {
     return(
         <div>
             <SearchView />

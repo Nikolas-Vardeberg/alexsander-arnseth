@@ -1,4 +1,8 @@
 
 export type GlobalData = {
-    example: string; // example of data available in the global scope
+    navbar: Navbar;
+}
+
+export type Navbar = {
+    links: any[];
 }
