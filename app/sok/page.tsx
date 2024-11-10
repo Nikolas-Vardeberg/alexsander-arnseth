@@ -1,11 +1,10 @@
+import SearchView from "@/common/views/search/search-view";
+import { useState } from "react";
 
-
-
-
-export default async function SearchPage() {
+export default function Page() {
     return(
-        <div className="font-medium">
-            sok
+        <div>
+            <SearchView />
         </div>
     )
 }
