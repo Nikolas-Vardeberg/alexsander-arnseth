@@ -9,6 +9,7 @@ import { SanityLive } from '@/sanity/lib/live';
 import Navigation from '@/common/components/global/Navigation';
 import { getGlobalData } from '@/common/lib/getGlobalData';
 import GlobalDataProvider from '@/common/providers/global-data-provider';
+import Footer from '@/common/components/global/Footer';
 
 const spaceGrotesk = localFont({
 	src: './fonts/SpaceGrotesk.woff',
@@ -43,6 +44,7 @@ export default async function RootLayout({
 									<VisualEditing />
 								</>
 							)}
+							<Footer />
 						</>
 					</GlobalDataProvider>
 				</body>

@@ -17,7 +17,7 @@ export default function SearchView() {
             <div className="flex flex-col">
                 <div className="mx-auto w-full container grid grid-cols-12 px-4 sm:px-5 py-10 pt-20">
                     <div className="col-span-12 md:col-span-10 md:col-start-2">
-                        <h2 className='text-black text-xl underline mb-20'>Hva leter du etter?</h2>
+                        <h2 className='text-black text-2xl font-semibold underline mb-20'>Hva leter du etter?</h2>
                         <div className='flex w-full items-center h-12 border border-primary-dark bg-white overflow-hidden group'>
                             <SearchIcon  className="mx-2 text-lg text-black size-4"/>
                             <input
@@ -33,7 +33,7 @@ export default function SearchView() {
                             <button
                                 type='button'
                                 onClick={handleSearch}
-                                className='flex h-full bg-primary p-4 justify-center items-center text-primary-dark hover:bg-secondary-pink'
+                                className='flex h-full p-4 justify-center items-center text-white bg-primary-dark hover:bg-secondary-pink'
                             >
                                 Søk
                             </button>

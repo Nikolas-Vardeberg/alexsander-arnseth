@@ -22,10 +22,11 @@ const HomePageView = ({ page }: { page: HomePage}) => {
                             alt={page.mainImage.alt}
                             height={1300}
                             width={1700}
+                            loading="lazy"
                             className="h-full w-full object-cover border-4 border-secondary-green"
                         />
                         <div className="stroke-none absolute -top-2 -right-2 md:-top-12 md:-right-12">
-                            <svg xmlns="http://www.w3.org/2000/svg" className="stroke-none mx-auto h-14 w-14 md:h-24 lg:h-48 md:w-36 lg:w-48"  viewBox="0 0 186 186" fill="none">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="stroke-none mx-auto h-14 w-14 md:h-24 lg:h-48 md:w-36 lg:w-48 hover:-rotate-12"  viewBox="0 0 186 186" fill="none">
                                 <g clipPath="url(#clip0_199_733)">
                                     <rect x="41.5781" width="150" height="150" rx="75" transform="rotate(16 41.5781 0)" fill="#002F0C"/>
                                 <g clipPath="url(#clip1_199_733)">
