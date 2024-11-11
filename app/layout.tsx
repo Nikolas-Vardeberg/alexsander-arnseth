@@ -1,15 +1,6 @@
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import './globals.css';
-import ReactQueryProvider from '@/common/providers/ReactQueryProvider';
-import { draftMode } from 'next/headers';
-import { DisableDraftMode } from '@/common/components/sanity/DisableDraftMode';
-import { VisualEditing } from 'next-sanity';
-import { SanityLive } from '@/sanity/lib/live';
-import Navigation from '@/common/components/global/Navigation';
-import { getGlobalData } from '@/common/lib/getGlobalData';
-import GlobalDataProvider from '@/common/providers/global-data-provider';
-import Footer from '@/common/components/global/Footer';
 
 const spaceGrotesk = localFont({
 	src: './fonts/SpaceGrotesk.woff',
@@ -27,28 +18,11 @@ export default async function RootLayout({
 }: Readonly<{
 	children: React.ReactNode;
 }>) {
-	const data = await getGlobalData();
-
 	return (
-		<ReactQueryProvider>
-			<html lang="en">
-				<body className={`${spaceGrotesk.className} antialiased`}>
-					<GlobalDataProvider globalData={data}>
-						<>
-							<Navigation />
-							{children}
-							<SanityLive />
-							{(await draftMode()).isEnabled && (
-								<>
-									<DisableDraftMode />
-									<VisualEditing />
-								</>
-							)}
-							<Footer />
-						</>
-					</GlobalDataProvider>
-				</body>
-			</html>
-		</ReactQueryProvider>
+		<html lang="en">
+			<body className={`${spaceGrotesk.className} antialiased`}>
+				{children}
+			</body>
+		</html>
 	);
 }

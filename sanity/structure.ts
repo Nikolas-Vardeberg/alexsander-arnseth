@@ -26,22 +26,22 @@ export const structure: StructureResolver = (S) =>
           .title("Settings")
           .items([
             S.listItem()
-              .title("Footer")
-              .icon(PanelTop)
-              .child(
-                S.editor()
-                  .schemaType("footer")
-                  .id("footer")
-                  .title("Footer")
-              ),
-            S.listItem()
               .title("Header")
-              .icon(PanelBottom)
+              .icon(PanelTop)
               .child(
                 S.editor()
                   .schemaType("header")
                   .id("header")
                   .title("Header")
+              ),
+              S.listItem()
+              .title("Footer")
+              .icon(PanelBottom)
+              .child(
+                S.editor()
+                  .schemaType("footer")
+                  .id("footer")
+                  .title("Footer")
               ),
     ])
 )
