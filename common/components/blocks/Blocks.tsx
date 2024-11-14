@@ -14,6 +14,11 @@ export const RenderBlock = ({ block, k: key }: { block: BlockType; k: number }) 
                     <Promotion key={key} {...block} />
                 </div>
             );
+
+        case "transportBlocks": 
+            return(
+                <pre>{JSON.stringify(block, undefined, 2)}</pre>
+            )
         
         default: {
             //biome-ignore lint/suspicious/noExplicitAny: <explanation>
