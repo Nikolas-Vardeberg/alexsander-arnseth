@@ -2,6 +2,7 @@ import type { Blocks as BlockType } from '@/common/types/blocks/blocks.types';
 import { clsx } from '@/common/utils/clsx';
 import Quote from './Quote';
 import Promotion from './Promotion';
+import TransportBlock from './transport-block';
 
 export const RenderBlock = ({ block, k: key }: { block: BlockType; k: number }) => {
     switch (block._type) {
@@ -18,7 +19,7 @@ export const RenderBlock = ({ block, k: key }: { block: BlockType; k: number }) 
         case "transportBlocks": 
             return(
                 <div className='mx-auto w-full container px-4 sm:px-5'>
-                    <pre>{JSON.stringify(block, undefined, 2)}</pre>
+                    <TransportBlock key={key} {...block} />
                 </div>
             )
         
