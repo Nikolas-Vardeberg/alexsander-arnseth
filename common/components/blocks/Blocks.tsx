@@ -17,7 +17,9 @@ export const RenderBlock = ({ block, k: key }: { block: BlockType; k: number }) 
 
         case "transportBlocks": 
             return(
-                <pre>{JSON.stringify(block, undefined, 2)}</pre>
+                <div className='mx-auto w-full container px-4 sm:px-5'>
+                    <pre>{JSON.stringify(block, undefined, 2)}</pre>
+                </div>
             )
         
         default: {

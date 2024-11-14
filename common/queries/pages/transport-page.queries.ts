@@ -12,4 +12,4 @@ export const getTransportPageQuery = groq`*[_type == "transportPage" && slug.cur
     excerpt,
     "blocks": blocks[]${BLOCKS_QUERY},
     ${seo},
-}`;
+}`
