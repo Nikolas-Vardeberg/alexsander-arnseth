@@ -8,3 +8,5 @@ Dette prosjektet er en skreddersydd nettside for Alexsander Arnseth, som driver 
 ## A4 format
 
 ![Desktop - 11 (4)](https://github.com/user-attachments/assets/7e95b16a-cebe-43a3-941c-5678c5a9b4c5)
+
+# THIS IS NOT THE COMPLETE VERSION (HIDDEN IN SECRET)
